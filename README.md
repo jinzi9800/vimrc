@@ -314,4 +314,3 @@ Just do following:
 * add dockerfile.vim at ~/.vim/my_plugins/Dockerfile.vim.
 * put the tree right & let every doc could be seen.
 * change the colorscheme with monokai.vim.
-* add "*-nginx.conf" as another ftdetect
