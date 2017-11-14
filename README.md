@@ -307,3 +307,7 @@ Cope mappings:
 Just do following:
 * Remove `~/.vim_runtime`
 * Remove any lines that reference `.vim_runtime` in your `~/.vimrc`
+
+
+
+* it the orignal COPY up above, below it is my own stuff. Thank for the oringal code, it so great for human being!
