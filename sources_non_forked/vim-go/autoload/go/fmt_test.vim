@@ -1,4 +1,8 @@
-func Test_run_fmt()
+" don't spam the user when Vim is started in Vi compatibility mode
+let s:cpo_save = &cpo
+set cpo&vim
+
+func! Test_run_fmt() abort
   let actual_file = tempname()
   call writefile(readfile("test-fixtures/fmt/hello.go"), actual_file)
 
@@ -13,7 +17,7 @@ func Test_run_fmt()
   call assert_equal(expected, actual)
 endfunc
 
-func Test_update_file()
+func! Test_update_file() abort
   let expected = join(readfile("test-fixtures/fmt/hello_golden.go"), "\n")
   let source_file = tempname()
   call writefile(readfile("test-fixtures/fmt/hello_golden.go"), source_file)
@@ -30,7 +34,7 @@ func Test_update_file()
   call assert_equal(expected, actual)
 endfunc
 
-func Test_goimports()
+func! Test_goimports() abort
   let $GOPATH = 'test-fixtures/fmt/'
   let actual_file = tempname()
   call writefile(readfile("test-fixtures/fmt/src/imports/goimports.go"), actual_file)
@@ -45,3 +49,9 @@ func Test_goimports()
 
   call assert_equal(expected, actual)
 endfunc
+
+" restore Vi compatibility settings
+let &cpo = s:cpo_save
+unlet s:cpo_save
+
+" vim: sw=2 ts=2 et
