@@ -15,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'mattn/emmet-vim'
 
 " YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim. It has several completion engines
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 " Monokai color scheme for Vim converted with coloration from Textmate theme with the same name.
 Plugin 'sickill/vim-monokai'
