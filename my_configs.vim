@@ -36,7 +36,5 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 set nu
-set background=dark
-syntax enable
-colorscheme monokai   
+colorscheme monokai
 au BufRead,BufNewFile *.nginx.conf set ft=nginx
