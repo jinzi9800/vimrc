@@ -38,3 +38,4 @@ filetype plugin indent on    " required
 set nu
 colorscheme monokai
 au BufRead,BufNewFile *.nginx.conf set ft=nginx
+vnoremap $` <esc>`>a```<esc>`<i```<esc>
