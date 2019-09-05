@@ -39,3 +39,4 @@ set nu
 colorscheme monokai
 au BufRead,BufNewFile *.nginx.conf set ft=nginx
 vnoremap $` <esc>`>a`<esc>`<i`<esc>
+vnoremap $~ <esc>`>o```<esc>`<O```<esc>
