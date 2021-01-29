@@ -20,6 +20,9 @@ Plugin 'mattn/emmet-vim'
 " Monokai color scheme for Vim converted with coloration from Textmate theme with the same name.
 Plugin 'sickill/vim-monokai'
 
+" This plugin was designed as a Vim frontend for the programmer's search tool ack. ack can be used as a replacement for 99% of the uses of grep. The plugin allows you to search with ack from within Vim and shows the results in a split window.
+" Plugin 'mileszs/ack.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -40,3 +43,5 @@ colorscheme monokai
 au BufRead,BufNewFile *.nginx.conf set ft=nginx
 vnoremap $` <esc>`>a`<esc>`<i`<esc>
 vnoremap $~ <esc>`>o```<esc>`<O```<esc>
+let g:NERDTreeWinPos = "right"
+map <tab> <C-w>w
